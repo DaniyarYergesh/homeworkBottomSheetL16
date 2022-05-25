@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sorting_by"
+        android:title="Сортировать по">
+        <menu>
+            <group
+                android:id="@+id/menu_group"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/alphabet"
+                    android:title="Алфавиту" />
+                <item
+                    android:id="@+id/currency"
+                    android:title="Стоимости" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/drop_sorting"
+        android:title="Сбросить сортировку"></item>
+    <item
+        android:id="@+id/menu_del"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete"
+        app:showAsAction="always"
+        android:visible="false" />
+
+</menu>

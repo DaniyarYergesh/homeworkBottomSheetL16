@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/rectangle_3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="339dp"
+        />
+    
+
+
+    <TextView
+        android:id="@+id/currencyType"
+        android:layout_width="185dp"
+        android:layout_height="26dp"
+        android:text="@string/currencyType"
+        android:textAppearance="@style/currencyStyle"
+        android:layout_marginTop="68dp"
+        android:layout_marginStart="205dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/currencyFlag"
+        android:layout_width="52dp"
+        android:layout_height="28.55dp"
+        android:background="@drawable/image_1"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="339dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="307dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currencyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/currencyStyle"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.cardview.widget.CardView>

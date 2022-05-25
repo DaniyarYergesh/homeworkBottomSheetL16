@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newtextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="371dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newCurrencyType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/currencyStyle" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newtextField1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="371dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newCurrencyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/currencyStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/selectFlag"
+        android:backgroundTint="#1789DB"
+        android:text="Выбрать флаг"
+        android:textAppearance="@style/currencyStyle"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="170dp"
+        />
+
+    <Button
+        android:id="@+id/addFromFragment"
+        android:backgroundTint="#1789DB"
+        android:text="Добавить"
+        android:textAppearance="@style/currencyStyle"
+        android:layout_width="371dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="230dp" />
+
+
+</FrameLayout>
