@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#91000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:background="@drawable/bottom_sheet_style"
+        android:backgroundTint="@null"
+        android:padding="12dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="371dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/typeCurrencyType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/currencyStyle"
+                android:hint="Название валюты" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="371dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="93dp"
+            app:expandedHintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/typeCurrencyCost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/currencyStyle"
+                android:hint="Кол. тенге в валюте"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/selectCurrencyFlag"
+            android:layout_width="214dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="161dp"
+            android:backgroundTint="#1789DB"
+            android:text="Выбрать флаг"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/addNewCurrency"
+            android:layout_width="361dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="218dp"
+            android:backgroundTint="#1789DB"
+            android:text="Добавить"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

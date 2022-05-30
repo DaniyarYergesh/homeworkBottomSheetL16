@@ -1,7 +1,8 @@
-package ui
+package ui.itemTouchHelper
 
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import ui.viewHolder_adapter.Adapter
 
 class SwipeToDelete(var adapter: Adapter): ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT)
 {

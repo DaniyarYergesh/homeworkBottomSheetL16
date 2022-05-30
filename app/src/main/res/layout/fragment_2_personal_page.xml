@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_8"
+        />
+
+    <TextView
+        android:id="@+id/string1"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/string1"
+        android:textAppearance="@style/style1"
+        android:lineSpacingExtra="9sp"
+        android:gravity="center_vertical"
+
+        />
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="411dp"
+        android:layout_height="0.1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/line_4"
+        />
+
+    <View
+        android:id="@+id/path1"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="384dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/path"
+        />
+
+    <View
+        android:id="@+id/pat2"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="384dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/path"
+        />
+
+    <View
+        android:id="@+id/path3"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="384dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/path"
+        />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:background="@drawable/photo"
+        android:elevation="4dp"
+        />
+
+    <TextView
+        android:id="@+id/azat_serzha"
+        android:layout_width="370dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="279dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="16sp"
+        android:text="@string/azat_serzha"
+        android:textAppearance="@style/azat_serzha" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="383dp"
+        android:background="@drawable/rectangle_2"
+        />
+
+    <TextView
+        android:id="@+id/string2"
+        android:layout_width="239.28dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="84.12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="396dp"
+        android:text="@string/string2"
+        android:textAppearance="@style/style2"
+        android:lineSpacingExtra="7sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="507dp"
+        android:background="@drawable/rectangle_2"
+        />
+
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="445dp"
+        android:background="@drawable/rectangle_2"
+        />
+
+    <TextView
+        android:id="@+id/string3"
+        android:layout_width="239.28dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="84.12dp"
+        android:layout_marginTop="458dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/string3"
+        android:textAppearance="@style/style3" />
+
+
+    <TextView
+        android:id="@+id/string4"
+        android:layout_width="239.28dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="84.12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="520dp"
+        android:text="@string/string4"
+        android:textAppearance="@style/style4"
+        android:lineSpacingExtra="7sp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="569dp"
+        android:background="@drawable/rectangle_2"
+        />
+
+
+    <TextView
+        android:id="@+id/string5"
+        android:layout_width="239.28dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="84.12dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="582dp"
+        android:text="@string/string5"
+        android:textAppearance="@style/style5"
+        android:lineSpacingExtra="7sp"
+        android:gravity="center_horizontal|center_vertical" />
+
+</FrameLayout>

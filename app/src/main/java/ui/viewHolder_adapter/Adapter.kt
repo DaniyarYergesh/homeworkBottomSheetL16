@@ -1,16 +1,12 @@
-package ui
+package ui.viewHolder_adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework_recyclerview.*
 import com.example.homework_recyclerview.Currency
-import com.google.android.material.snackbar.Snackbar
 
 import model.Parent
-import java.nio.file.Files.find
-import java.util.*
 
 class Adapter(
     private val clickListener: () -> Unit,
@@ -22,8 +18,8 @@ class Adapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
-            R.layout.item -> CurrencyViewHolder(inflater, parent, function)
-            R.layout.item2 -> AddButtonViewHolder(inflater, parent, clickListener)
+            R.layout.currency_recyclerview_layout -> CurrencyViewHolder(inflater, parent, function)
+            R.layout.add_button_recyclerview_layout -> AddButtonViewHolder(inflater, parent, clickListener)
             else -> CurrencyViewHolder(inflater, parent, function)
         }
 
@@ -31,9 +27,9 @@ class Adapter(
 
     override fun getItemViewType(position: Int): Int =
         when (data[position]) {
-            is Currency -> R.layout.item
-            is Add1 -> R.layout.item2
-            else -> R.layout.item
+            is Currency -> R.layout.currency_recyclerview_layout
+            is Add1 -> R.layout.add_button_recyclerview_layout
+            else -> R.layout.currency_recyclerview_layout
         }
 
     override fun getItemCount(): Int = data.size

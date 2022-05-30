@@ -1,4 +1,4 @@
-package ui
+package ui.viewHolder_adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.homework_recyclerview.Add1
-import com.example.homework_recyclerview.Currency
 import com.example.homework_recyclerview.R
 
 class AddButtonViewHolder(
@@ -15,7 +14,7 @@ class AddButtonViewHolder(
     parent: ViewGroup,
     val clickListener: () -> Unit
 )
-    : RecyclerView.ViewHolder(inflater.inflate(R.layout.item2, parent, false))
+    : RecyclerView.ViewHolder(inflater.inflate(R.layout.add_button_recyclerview_layout, parent, false))
 {
     private val addTextTextView = itemView.findViewById<TextView>(R.id.addText)
     private val addIconView = itemView.findViewById<ImageView>(R.id.path837)

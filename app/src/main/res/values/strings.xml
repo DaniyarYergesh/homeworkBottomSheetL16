@@ -1,6 +1,30 @@
 <resources>
     <string name="app_name">homework_recyclerView</string>
-    <string name="currencyText">1 500 000</string>
     <string name="currencyType">Тенге, Казахстан</string>
     <string name="add">Добавить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="write_code">Введите код</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="ok">OK</string>
+    <string name="_0">0</string>
+    <string name="string1">Личная страница</string>
+
+    <string name="azat_serzha">Azat Serzhanov\nazatserzhan@gmail.com</string>
+
+    <string name="string2">Поделиться</string>
+
+    <string name="string3">Отправить по почте</string>
+
+    <string name="string4">Позвонить</string>
+
+    <string name="string5">Запустить камеру</string>
 </resources>
