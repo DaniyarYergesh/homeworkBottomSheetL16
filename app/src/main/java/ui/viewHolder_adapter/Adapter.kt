@@ -22,7 +22,6 @@ class Adapter(
             R.layout.add_button_recyclerview_layout -> AddButtonViewHolder(inflater, parent, clickListener)
             else -> CurrencyViewHolder(inflater, parent, function)
         }
-
     }
 
     override fun getItemViewType(position: Int): Int =
@@ -40,7 +39,6 @@ class Adapter(
             is CurrencyViewHolder -> holder.bind(data[position] as Currency, position)
             is AddButtonViewHolder -> holder.bind(data[position] as Add1)
         }
-
     }
 
 
@@ -110,6 +108,15 @@ class Adapter(
         data1.add(newItem as Currency)
         data1.sortBy { it.text }
         return data1.indexOf(newItem)
+    }
+
+    fun updateCurrencyData(textTenge: String) {
+        val data1 = data.dropLast(1) as MutableList<Currency>
+        for (item in data1){
+            item.text = textTenge.toInt() / item.course
+            notifyDataSetChanged()
+        }
+
     }
 
 }

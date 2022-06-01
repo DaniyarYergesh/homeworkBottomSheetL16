@@ -1,6 +1,8 @@
 package ui.fragments
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.*
 import androidx.core.content.ContextCompat
@@ -36,6 +38,7 @@ class Fragment1 : Fragment(R.layout.fragment_1), DeleteDialogCallback,
     private var adapter: Adapter? = null
     private var layoutManager: LinearLayoutManager? = null
     private lateinit var currencyList: List<Parent>
+    private lateinit var kzCurrency : TextInputEditText
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,16 +48,17 @@ class Fragment1 : Fragment(R.layout.fragment_1), DeleteDialogCallback,
         onOptionsItemSelected1()
     }
 
+
     private fun setupFun() {
         currencyList = listOf(
-            Currency(10000, "Доллары, США ", R.drawable.image_1_2),
-            Currency(1000, "Лира, Турция", R.drawable.image_1_3),
-            Currency(100000, "Евро, EC", R.drawable.image_1_4),
-            Currency(1000000, "Доллары, США", R.drawable.image_1_5),
-            Currency(3000, "Доллары, США", R.drawable.image_1_2),
-            Currency(1500, "Доллары, США", R.drawable.image_1_2),
-            Currency(56000000, "Лира, Турция", R.drawable.image_1_3),
-            Currency(23450, "Евро, EC", R.drawable.image_1_4),
+            Currency(0, "Доллары, США ", R.drawable.image_1_2, 400),
+            Currency(0, "Лира, Турция", R.drawable.image_1_3, 200),
+            Currency(0, "Евро, EC", R.drawable.image_1_4, 100),
+            Currency(0, "Доллары, США", R.drawable.image_1_5, 300),
+            Currency(0, "Доллары, США", R.drawable.image_1_2, 80),
+            Currency(0, "Доллары, США", R.drawable.image_1_2, 90),
+            Currency(0, "Лира, Турция", R.drawable.image_1_3, 150),
+            Currency(0, "Евро, EC", R.drawable.image_1_4, 60),
             Add1("Добавить", R.drawable.path837)
         )
 
@@ -96,6 +100,23 @@ class Fragment1 : Fragment(R.layout.fragment_1), DeleteDialogCallback,
 
         val itemTouchHelper1 = ItemTouchHelper(DragDropMove(adapter!!))
         itemTouchHelper1.attachToRecyclerView(myRecyclerView)
+
+        kzCurrency = requireView().findViewById(R.id.currencyTextKaz)
+        kzCurrency.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                val text = s.toString()
+                if (text.isNotBlank()) {
+                    adapter?.updateCurrencyData(text) }
+            }
+        }
+        )
+
 
     }
 
@@ -196,9 +217,10 @@ class Fragment1 : Fragment(R.layout.fragment_1), DeleteDialogCallback,
         }
         adapter?.addNewItem(
             Currency(
-                Integer.parseInt(costRespectiveToTenge.text.toString()),
+                kzCurrency.text.toString().toInt()/Integer.parseInt(costRespectiveToTenge.text.toString()),
                 nameOfCurrency.text.toString(),
-                res
+                res,
+                Integer.parseInt(costRespectiveToTenge.text.toString())
             ), position
         )
         scrollBottom(adapter?.itemCount ?: 0)

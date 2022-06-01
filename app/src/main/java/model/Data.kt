@@ -1,11 +1,11 @@
 package com.example.homework_recyclerview
 
-import android.text.Editable
 import androidx.annotation.DrawableRes
 import model.Parent
 
 data class Currency(
-    val text: Int,
+    var text: Int,
     val type: String,
-    @DrawableRes val flag: Int
+    @DrawableRes val flag: Int,
+    val course: Int
 ):Parent
